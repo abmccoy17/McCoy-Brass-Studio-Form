@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McCoy Brass Studio Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 id="title">McCoy Brass Studio Survey Form</h1>
+    <p id="description">Please take the time to reflect on your experience.</p>
+
+    <div id="body">
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label"><h2>Name: </h2></label>
+                <input name="name" id="name" type="text" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label"><h2>Email: </h2></label>
+                <input name="email" id="email" type="email" placeholder="Email" required/>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label"><h2>Age: </h2></label>
+                <input name="age" id="number" type="number" min="8" max="19" placeholder="Your Age" required/>
+            </div>
+            <div class="form-group">
+                <label for="dropdown"><h2>Your Instrument: </h2></label>
+                <select name="instrument" id="dropdown" required>
+                    <option>--Please choose an option--</option>
+                    <option value="trumpet">Trumpet</option>
+                    <option value="french-horn">French Horn</option>
+                    <option value="trombone">Trombone</option>
+                    <option value="euphonium">Euphonium</option>
+                    <option value="tuba">Tuba</option>
+                </select>
+            </div>
+            <div id="reasons" class="form-group">
+                <p>Please check your any and all of the reasons you enrolled in private lessons.</p>
+                <label><input name="reason" value="fun" type="checkbox" class="input-checkbox" />Having fun while improving on my instrument</label>
+                <label><input name="reason" value="chair" type="checkbox" class="input-checkbox" />Performing better on chair placement tests in my school ensemble</label>
+                <label><input name="reason" value="honor" type="checkbox" class="input-checkbox" />Preparing for honor ensemble auditions</label>
+                <label><input name="reason" value="college" type="checkbox" class="input-checkbox" />Preparing for music school auditions</label>
+                <label><input name="reason" value="all" type="checkbox" class="input-checkbox" />All of the above</label>
+            </div>
+            <div id="reccomend" class="form-group">
+                <p>Would you reccomend the McCoy Brass Studio to a friend?</p>
+                <label for="definitely"><input name="user-reccomend" value="definitely" type="radio" id="definitely" checked required>Definitely</input></label>
+                <label for="maybe"><input name="user-reccomend" value="maybe" type="radio" id="maybe" required>Maybe</input></label>
+                <label for="prob-not"><input name="user-reccomend" value="prob-not" type="radio" id="prob-not" required>Probably Not</input></label>
+            </div>
+            <div class="form-group">
+                <p>Any additional comments or suggestions? Let us know below!</p>
+                <textarea id="text-area"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
